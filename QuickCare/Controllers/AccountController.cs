@@ -2,6 +2,8 @@
 // Controllers/AccountController.cs
 // ==============================
 
+using Common_QuickCare.Controllers;
+using Common_QuickCare.Repositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -12,11 +14,11 @@ using System.Security.Claims;
 
 namespace QuickCare.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         private readonly AccountRepository _repo;
 
-        public AccountController(AccountRepository repo)
+        public AccountController(CommonRepository commonRepo, AccountRepository repo ) : base(commonRepo)
         {
             _repo = repo;
         }

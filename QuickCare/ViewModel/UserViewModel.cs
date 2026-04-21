@@ -1,4 +1,5 @@
-﻿using Common_QuickCare.ViewModel;
+﻿
+using Common_QuickCare.ViewModel;
 
 namespace QuickCare.ViewModel
 {
@@ -7,7 +8,7 @@ namespace QuickCare.ViewModel
         public UserVM? User { get; set; }
         public List<UserVM>? Users { get; set; }
     }
-    public class UserVM : BaseViewModel
+    public class UserVM : BaseOrgViewModel
     {
         public int UserId { get; set; }
         public string? UserName { get; set; }

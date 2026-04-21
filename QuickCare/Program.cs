@@ -2,8 +2,11 @@
 // Program.cs
 // ==============================
 
-using QuickCare.Repositories;
+using Common_QuickCare.Repositories;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Data.SqlClient;
+using QuickCare.Repositories;
+using System.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +22,12 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddScoped<IDbConnection>(sp =>
+    new SqlConnection(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
+
 builder.Services.AddScoped<AccountRepository>();
+builder.Services.AddScoped<CommonRepository>();
 
 var app = builder.Build();
 

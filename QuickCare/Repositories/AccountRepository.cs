@@ -7,19 +7,14 @@ namespace QuickCare.Repositories
 {
     public class AccountRepository
     {
-        private readonly IConfiguration _configuration;
+        private readonly IDbConnection _conn;
 
-        public AccountRepository(IConfiguration configuration)
+        public AccountRepository(IDbConnection conn)
         {
-            _configuration = configuration;
+            _conn = conn;
         }
-
-        private IDbConnection Connection =>
-            new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
-
         public UserVM GetUserByUserName(string userName)
         {
-            using var db = Connection;
 
             string query = @"
             SELECT 
@@ -33,7 +28,7 @@ namespace QuickCare.Repositories
             INNER JOIN Membership.Roles R ON U.RoleId = R.RoleId
             WHERE U.UserName = @UserName";
 
-            return db.QueryFirstOrDefault<UserVM>(query, new { UserName = userName });
+            return _conn.QueryFirstOrDefault<UserVM>(query, new { UserName = userName });
         }
     }
 }
