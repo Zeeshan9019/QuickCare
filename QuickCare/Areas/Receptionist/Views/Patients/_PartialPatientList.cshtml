@@ -1,0 +1,20 @@
+﻿@using QuickCare.Areas.Receptionist.Controllers.ViewModals
+@model IEnumerable<QuickCare.Areas.Receptionist.Controllers.ViewModals.PatientVM>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td><strong>@item.FullName</strong></td>
+        <td>@(item.Gender == 1 ? "Male" : "Female")</td>
+        <td>@item.PhoneNumber</td>
+        <td>@item.CityName</td>
+        <td class="text-end">
+            <button class="btn btn-sm btn-outline-warning border-0 me-2" onclick="editPatient(@item.PatientId)">
+                <i class="fa fa-edit"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-danger border-0" onclick="confirmDelete(@item.PatientId)">
+                <i class="fa fa-trash"></i>
+            </button>
+        </td>
+    </tr>
+}

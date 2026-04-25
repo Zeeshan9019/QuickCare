@@ -28,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[E:/QuickCare/QuickCare/Areas/Receptionist/Views/Patients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVjZXB0aW9uaXN0XFZpZXdzXFBhdGllbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/QuickCare/QuickCare/Areas/Receptionist/Views/Patients/_PartialPatientList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVjZXB0aW9uaXN0XFZpZXdzXFBhdGllbnRzXF9QYXJ0aWFsUGF0aWVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/QuickCare/QuickCare/Areas/Receptionist/Views/Patients/_PatientModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVjZXB0aW9uaXN0XFZpZXdzXFBhdGllbnRzXF9QYXRpZW50TW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/QuickCare/QuickCare/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/QuickCare/QuickCare/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/QuickCare/QuickCare/Views/Shared/_PartialShimmer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYXJ0aWFsU2hpbW1lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/QuickCare/QuickCare/Views/Shared/_ValidationScriptsPartial.cshtml]

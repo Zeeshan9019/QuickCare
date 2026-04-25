@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
+    <link rel="icon" type="image/svg+xml" href="~/images/logo.svg">
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; }
         #wrapper { display: flex; align-items: stretch; }
@@ -41,7 +41,7 @@
                 @if (User.IsInRole("Receptionist"))
                 {
                     <li>
-                        <a href="#"><i class="fa fa-user-plus me-2"></i> Register Patient</a>
+                        <a href="@Url.Action("Index", "Patients", new { area = "Receptionist" })"><i class="fa fa-user-plus me-2"></i> Register Patient</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-calendar-check me-2"></i> Book Appointment</a>

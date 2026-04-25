@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QuickCare")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9616d054088c4a4b987bc5ee6092dc494b680e27")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29c773fd4a66adba15729c6f4f51df87fdfeac25")]
 [assembly: System.Reflection.AssemblyProductAttribute("QuickCare")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QuickCare")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
